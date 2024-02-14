@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raghavendra - Portfolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+
+</head>
+<body>
+    <nav id="desktop-nav">
+
+        <div class="logo">Raghavendra</div>
+
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about" > about </a></li>
+                <li><a href="#education"> education </a></li>
+                <li><a href="#projects"> projects </a></li>
+                <li><a href="#contact"> contact </a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <nav id="hamburger-nav" >
+
+        <div class="logo">Raghavendra</div>
+
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            
+            </div>
+
+            <div class="menu-links" >
+
+                <li><a href="#about" onclick="toggleMenu()"> about </a></li>
+                <li><a href="#education" onclick="toggleMenu()"> education </a></li>
+                <li><a href="#projects" onclick="toggleMenu()"> projects </a></li>
+                <li><a href="#contact" onclick="toggleMenu()"> contact </a></li>
+
+            </div>
+        </div>
+
+    </nav>
+
+
+    <section id="profile">
+
+        <div class="section_pic_Container">
+
+            <img src="./assests/profile-pic.jpg" alt = "profilrpicture"  />
+
+        </div>
+
+        <div class="section_text">
+            <p class="section_text_p1"> Hello,I`m</p>
+            <h1 class="title"> Raghavendra</h1>
+            <p class="section_text_p2">student and graduate</p>
+            <div class="btn-container">
+                <button class="btn btn-container-2" onclick="window.open('./assests/Raghavendra.Atla Resume (11).pdf')">
+                     download cv
+                </button>
+
+                <button class="btn btn-container-1" onclick="location.href='./#contact'">
+                    contact me 
+                </button>
+            </div>
+
+            <div id="social_container">
+
+                <img src="./assests/linkedin.png" 
+                alt="linked-in-profile" 
+                class="icon" t
+                onclick="location.href='https://www.linkedin.com/feed/'" />
+
+                <img src="./assests/github.png" 
+                alt="github-profile" 
+                class="icon" 
+                onclick="location.href='https://www.github.com'" />
+
+            </div>
+        </div>
+
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
